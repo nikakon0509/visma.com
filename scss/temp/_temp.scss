@@ -1,0 +1,55 @@
+%display{
+    display: flex;
+    flex-direction: row;
+}
+
+%text{
+    font-size: 15px;
+    color:white;
+}
+
+
+%picture_3_part_1{
+   
+    margin: auto;
+
+    & p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+%new_about_us{
+    margin-left: 15%;
+    margin-top: 2%;
+
+    & p:first-child{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    & p:nth-of-type(2),p:nth-of-type(3), p:nth-of-type(4), & p:last-child{
+        font-size: 14px;
+        color: #c2bcff;
+    }
+}
+
+// %new_about_us_media{
+//     margin-left: 6%;
+//     margin-top: 2%;
+
+//     & p:first-child{
+//         font-size: 15px;
+//         color: #ffffff;
+//     }
+
+//     & p:nth-of-type(2),p:nth-of-type(3), p:nth-of-type(4), & p:last-child{
+//         font-size: 13px;
+//         color: #c2bcff;
+//     }
+// }
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(fonts/PT_Sans-Web-Regular.ttf);
+}

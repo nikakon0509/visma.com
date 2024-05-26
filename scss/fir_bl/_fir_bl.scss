@@ -1,0 +1,73 @@
+.fir_bl{
+    background-image: url("image/ships.png");
+    height: 750px;
+    box-sizing: border-box;
+
+    &__wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 113px 0px;  
+    }
+
+    .text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        word-spacing: 30%;
+
+        .osn_text{
+            @extend %text;
+            font-size: 50px;
+            font-weight: 700;
+            display: block;
+            width: 100%;
+        }
+        .osn_text1{
+            @extend %text;
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 2px;
+            display: block;
+            width: 100%;
+        }
+        .osn_text2{
+            @extend %text;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .gridic{
+        display: grid;
+        grid-template-columns: 306px 306px;
+        grid-template-rows: 223px 223px;
+        gap: 20px;
+        // grid-template-columns: 3fr 3fr;
+        // grid-template-rows: 10fr 10fr;
+        width: 50%;
+       
+        .back{
+            background-color: #5DB7DE;
+            border-radius:15px;
+
+            h3{
+                margin: 20px 20px;
+                font-weight: 300;
+                color:white;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+            p{
+                margin: 120px 20px;
+                font-weight: 500;
+                color:white;
+                font-size: 19px;
+            }
+        }
+
+
+    }
+
+}
